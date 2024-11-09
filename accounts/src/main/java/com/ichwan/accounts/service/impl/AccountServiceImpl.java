@@ -13,6 +13,7 @@ import com.ichwan.accounts.repository.AccountsRepository;
 import com.ichwan.accounts.repository.CustomerRepository;
 import com.ichwan.accounts.service.IAccountService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -20,11 +21,11 @@ import java.util.Optional;
 import java.util.Random;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class AccountServiceImpl implements IAccountService {
 
-    private CustomerRepository customerRepository;
-    private AccountsRepository accountsRepository;
+    private final CustomerRepository customerRepository;
+    private final AccountsRepository accountsRepository;
 
     /**
      * @param customerDto Object created

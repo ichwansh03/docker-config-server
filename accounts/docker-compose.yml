@@ -32,6 +32,7 @@ services:
           memory: 700m
     networks:
       - ichwansh
+
 networks:
   ichwansh:
-    driver: "bridge"
+      driver: "bridge"
