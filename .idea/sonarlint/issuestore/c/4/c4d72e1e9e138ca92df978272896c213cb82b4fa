@@ -1,15 +1,25 @@
 
 ^
-java:S1710&"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8£öı­2
+java:S17107"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8èÔ˜¾²2
 ^
-java:S1710B"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8¤öı­2
+java:S1710S"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8ğÔ˜¾²2
 ^
-java:S1710["<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8¥öı­2
-^
-java:S1710~"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8¥öı­2
+java:S1710l"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8òÔ˜¾²2
+_
+java:S1710"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8ƒÕ˜¾²2
+_
+java:S1710´"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8ò¬š¾²2
+_
+java:S1710Í"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8ó¬š¾²2
+_
+java:S1710æ"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8ó¬š¾²2
+_
+java:S6813-"BRemove this field injection and use constructor injection instead.(êæÄŞ8†û—¾²2
+_
+java:S68130"BRemove this field injection and use constructor injection instead.(êæÄŞ8†û—¾²2
 Y
-java:S63536"<Use concise character class syntax '\\d' instead of '[0-9]'.(÷‘„§8Öı­2
+java:S6353G"<Use concise character class syntax '\\d' instead of '[0-9]'.(÷‘„§8²Ö˜¾²2
 Y
-java:S6353Q"<Use concise character class syntax '\\d' instead of '[0-9]'.(÷‘„§8˜Öı­2
+java:S6353b"<Use concise character class syntax '\\d' instead of '[0-9]'.(÷‘„§8ÈÖ˜¾²2
 Z
-java:S6353‘"<Use concise character class syntax '\\d' instead of '[0-9]'.(÷‘„§8ºÖı­2
+java:S6353¢"<Use concise character class syntax '\\d' instead of '[0-9]'.(÷‘„§8âÖ˜¾²2
