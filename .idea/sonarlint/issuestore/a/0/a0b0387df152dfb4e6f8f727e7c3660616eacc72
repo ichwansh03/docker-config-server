@@ -1,0 +1,23 @@
+
+^
+java:S17102"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8ƒŸà³2
+^
+java:S1710L"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8˜Ÿà³2
+^
+java:S1710g"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8šŸà³2
+_
+java:S1710ˆ"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8œŸà³2
+_
+java:S1710ª"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8 Ÿà³2
+_
+java:S1710Ã"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8¨Ÿà³2
+_
+java:S1710Ü"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8²Ÿà³2
+_
+java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄŞ8Î­à³2
+_
+java:S6813*"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ñ­à³2
+X
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8”ºà³2
+]
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8˜ºà³2
