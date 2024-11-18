@@ -1,0 +1,10 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to related accounts Prod"
+  contactDetails:
+    name: "John Doe Prod"
+    email: "prod@mail.com"
+  onCallSupport:
+    - (021) 445-1234

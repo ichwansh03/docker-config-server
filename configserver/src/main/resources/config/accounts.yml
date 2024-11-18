@@ -1,0 +1,10 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to related accounts local API"
+  contactDetails:
+    name: "John Doe"
+    email: "john@mail.com"
+  onCallSupport:
+    - (021) 445-1234

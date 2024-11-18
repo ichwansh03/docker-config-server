@@ -1,0 +1,10 @@
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to related cards local API"
+  contactDetails:
+    name: "Ichwan - Developer"
+    email: "ichwan.card@mail.com"
+  onCallSupport:
+    - (021) 789-1011

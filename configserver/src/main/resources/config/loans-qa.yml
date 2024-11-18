@@ -1,0 +1,10 @@
+build:
+  version: "2.0"
+
+cards:
+  message: "Welcome to related loans local API for QA"
+  contactDetails:
+    name: "Ichwan - QA"
+    email: "ichwan.qa@mail.com"
+  onCallSupport:
+    - (021) 789-1012
