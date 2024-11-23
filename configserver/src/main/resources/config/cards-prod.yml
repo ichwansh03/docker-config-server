@@ -1,13 +1,8 @@
-spring:
-  config:
-    activate:
-      on-profile: "prod"
-
 build:
   version: "1.0"
 
 cards:
-  message: "Welcome to related loans prod API"
+  message: "Welcome to related cards prod API"
   contactDetails:
     name: "Ichwan - Prod"
     email: "ichwan@mail.com"
