@@ -89,7 +89,5 @@ q
 Acards/src/main/java/com/ichwan/cards/dto/CardsContactInfoDto.java,f/1/f15d05f35170bb9184afc977daa47423c271ba2b
 q
 Aloans/src/main/java/com/ichwan/loans/dto/LoansContactInfoDto.java,0/8/08af9735e605967ef5f1ebe03e5fd0851c61fc5a
-^
-.accounts/src/main/resources/application_qa.yml,2/0/2083ad4f62368ff47b4859046694fde3d587d40c
-`
-0accounts/src/main/resources/application_prod.yml,6/1/610051c28af095897b96be33aed7ff511465e2c1
+X
+(loans/src/main/resources/application.yml,f/7/f74f976320aa562c6e975edce591212af10fe7aa
