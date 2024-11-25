@@ -2,9 +2,10 @@ build:
   version: "3.0"
 
 cards:
-  message: "Welcome to related cards local API"
+  message: "Welcome to cards related local APIs "
   contactDetails:
-    name: "Ichwan - Developer"
-    email: "ichwan.card@mail.com"
+    name: "Abdul - Developer"
+    email: "abdul@cards.com"
   onCallSupport:
-    - (021) 789-1011
+    - (412) 419-3491
+    - (915) 382-1932
