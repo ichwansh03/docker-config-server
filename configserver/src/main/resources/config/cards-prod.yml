@@ -4,7 +4,7 @@ build:
 cards:
   message: "Welcome to cards related QA APIs "
   contactDetails:
-    name: "Budi - QA Lead"
+    name: "Budi - QA"
     email: "budi@cards.com"
   onCallSupport:
     - (310) 875-4367

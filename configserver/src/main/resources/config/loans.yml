@@ -4,7 +4,7 @@ build:
 loans:
   message: "Welcome to loans related local APIs "
   contactDetails:
-    name: "Ardi - Developer"
+    name: "Ardi - Dev"
     email: "ardi@loans.com"
   onCallSupport:
     - (452) 456-2176

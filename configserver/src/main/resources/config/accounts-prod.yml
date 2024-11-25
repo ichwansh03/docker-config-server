@@ -4,7 +4,7 @@ build:
 accounts:
   message: "Welcome to accounts related prod APIs "
   contactDetails:
-    name: "Andi - Product Owner"
+    name: "Andi - PO"
     email: "andi@account.com"
   onCallSupport:
     - (453) 392-4829

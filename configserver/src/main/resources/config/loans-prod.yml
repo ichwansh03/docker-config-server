@@ -4,7 +4,7 @@ build:
 loans:
   message: "Welcome to loans related prod APIs "
   contactDetails:
-    name: "Darmian - Product Owner"
+    name: "Darmian - PO"
     email: "darmian@loans.com"
   onCallSupport:
     - (723) 656-8709

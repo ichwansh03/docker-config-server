@@ -4,7 +4,7 @@ build:
 loans:
   message: "Welcome to loans related QA APIs "
   contactDetails:
-    name: "Bambang - QA Lead"
+    name: "Bambang - QA"
     email: "bambang@loans.com"
   onCallSupport:
     - (785) 545-6565
