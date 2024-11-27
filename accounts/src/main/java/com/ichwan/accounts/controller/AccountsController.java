@@ -29,22 +29,17 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
 @Validated
+@RequiredArgsConstructor
 public class AccountsController {
 
     private final IAccountService iAccountService;
 
-    @Value("${build.version}")
-    private String buildVersion;
+    /*@Value("${build.version}")
+    private String buildVersion;*/
 
-    @Autowired
-    private Environment environment;
+    private final Environment environment;
 
-    @Autowired
-    private AccountsContactInfoDto infoDto;
-
-    public AccountsController(IAccountService iAccountService) {
-        this.iAccountService = iAccountService;
-    }
+    private final AccountsContactInfoDto infoDto;
 
     @Operation(summary = "Create account Rest API")
     @ApiResponses({
@@ -166,7 +161,7 @@ public class AccountsController {
         }
     }
 
-    @Operation(summary = "Get Rest API Version")
+    /*@Operation(summary = "Get Rest API Version")
     @ApiResponses({
             @ApiResponse(
                     responseCode = "200",
@@ -189,7 +184,7 @@ public class AccountsController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(buildVersion);
-    }
+    }*/
 
     @Operation(summary = "Get Java Version")
     @ApiResponses({
