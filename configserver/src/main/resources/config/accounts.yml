@@ -2,9 +2,10 @@ build:
   version: "3.0"
 
 accounts:
-  message: "Welcome to related accounts local API"
+  message: "Welcome to accounts related local APIs "
   contactDetails:
-    name: "John Doe"
-    email: "john@mail.com"
+    name: "Ujang - Developer"
+    email: "john@account.com"
   onCallSupport:
-    - (021) 445-1234
+    - (555) 555-1234
+    - (555) 523-1345

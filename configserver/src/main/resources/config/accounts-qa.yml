@@ -2,9 +2,10 @@ build:
   version: "2.0"
 
 accounts:
-  message: "Welcome to related accounts QA"
+  message: "Welcome to accounts related QA APIs "
   contactDetails:
-    name: "John Doe QA Lead"
-    email: "johnqa@mail.com"
+    name: "Ujang - QA"
+    email: "ujang@account.com"
   onCallSupport:
-    - (021) 445-1234
+    - (666) 265-3765
+    - (666) 734-8371

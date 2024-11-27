@@ -1,10 +1,11 @@
 build:
   version: "2.0"
 
-cards:
-  message: "Welcome to related loans local API for QA"
+loans:
+  message: "Welcome to loans related QA APIs "
   contactDetails:
-    name: "Ichwan - QA"
-    email: "ichwan.qa@mail.com"
+    name: "Bambang - QA"
+    email: "bambang@loans.com"
   onCallSupport:
-    - (021) 789-1012
+    - (785) 545-6565
+    - (853) 546-3467

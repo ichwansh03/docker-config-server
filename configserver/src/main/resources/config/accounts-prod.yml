@@ -2,9 +2,10 @@ build:
   version: "1.0"
 
 accounts:
-  message: "Welcome to related accounts Prod"
+  message: "Welcome to accounts related prod APIs "
   contactDetails:
-    name: "John Doe Prod"
-    email: "prod@mail.com"
+    name: "Andi - PO"
+    email: "andi@account.com"
   onCallSupport:
-    - (021) 445-1234
+    - (453) 392-4829
+    - (236) 203-0384

@@ -8,11 +8,11 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.config</groupId>
+	<groupId>com.ichwan</groupId>
 	<artifactId>configserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>configserver</name>
-	<description>Demo project for Spring Cloud Config Server</description>
+	<description>Demo project for Spring Config Server</description>
 	<url/>
 	<licenses>
 		<license/>
