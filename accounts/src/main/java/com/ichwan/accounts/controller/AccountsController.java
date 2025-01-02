@@ -1,6 +1,7 @@
 package com.ichwan.accounts.controller;
 
 import com.ichwan.accounts.constants.AccountConstants;
+import com.ichwan.accounts.dto.AccountDetailInfoDto;
 import com.ichwan.accounts.dto.CustomerDto;
 import com.ichwan.accounts.dto.ErrorResponseDto;
 import com.ichwan.accounts.dto.ResponseDto;
@@ -13,7 +14,9 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -23,11 +26,16 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "CRUD REST API for Accounts")
 @RestController
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Validated
 public class AccountsController {
 
-    private IAccountService iAccountService;
+    private final IAccountService iAccountService;
+    private final Environment environment;
+    private final AccountDetailInfoDto infoDto;
+
+    @Value("${info.dev}")
+    private String infoDev;
 
     @Operation(summary = "Create account Rest API")
     @ApiResponses({
@@ -52,7 +60,7 @@ public class AccountsController {
         iAccountService.createAccount(customerDto);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(new ResponseDto(AccountConstants.STATUS_CREATED, AccountConstants.MSG_CREATED));
+                .body(new ResponseDto());
     }
 
     @Operation(summary = "Get account Rest API")
@@ -107,11 +115,11 @@ public class AccountsController {
         if(isUpdated) {
             return ResponseEntity
                     .status(HttpStatus.OK)
-                    .body(new ResponseDto(AccountConstants.STATUS_OK, AccountConstants.MSG_OK));
+                    .body(new ResponseDto());
         } else {
             return ResponseEntity
                     .status(HttpStatus.EXPECTATION_FAILED)
-                    .body(new ResponseDto(AccountConstants.STATUS_ERROR, AccountConstants.MSG_ERROR));
+                    .body(new ResponseDto());
         }
     }
 
@@ -141,11 +149,30 @@ public class AccountsController {
         if (isDeleted) {
             return ResponseEntity
                     .status(HttpStatus.OK)
-                    .body(new ResponseDto(AccountConstants.STATUS_OK,AccountConstants.MSG_OK));
+                    .body(new ResponseDto());
         } else {
             return ResponseEntity
                     .status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body(new ResponseDto(AccountConstants.STATUS_ERROR, AccountConstants.MSG_ERROR));
+                    .body(new ResponseDto());
         }
+    }
+
+    @GetMapping("/info-dev")
+    public ResponseEntity<String> getInfoDev(){
+        return ResponseEntity.status(HttpStatus.OK).body(infoDev);
+    }
+
+    @GetMapping("/java-path")
+    public ResponseEntity<String> getEmailDev(){
+        return ResponseEntity.status(HttpStatus.OK).body(environment.getProperty("MAVEN_HOME"));
+    }
+
+    /**
+     * buat DTO class untuk menampung konfig, enable config properties pada class main
+     * @return
+     */
+    @GetMapping("/account-detail")
+    public ResponseEntity<AccountDetailInfoDto> getAccountInfo(){
+        return ResponseEntity.status(HttpStatus.OK).body(infoDto);
     }
 }

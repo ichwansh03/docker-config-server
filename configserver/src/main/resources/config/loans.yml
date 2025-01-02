@@ -1,0 +1,11 @@
+info:
+  dev: "Muhammad Ali"
+
+accounts:
+  description: "This is properties for loans"
+  details:
+    project: "microservices"
+    version: "1.2"
+  helps:
+    - 0857 6668-9695
+    - 0821 1310-6435

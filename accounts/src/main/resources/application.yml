@@ -1,6 +1,10 @@
 server:
   port: 8080
   spring:
+    application:
+      name: "accounts"
+    config:
+      import: "optional:configserver:http://localhost:8071/"
     datasource:
       url: jdbc:h2:mem:testdb
       driverClassName: org.h2.Driver
@@ -14,3 +18,15 @@ server:
       hibernate:
         ddl-auto: update
       show-sql: true
+
+info:
+  dev: "Ichwan Sholihin"
+
+accounts:
+  description: "This is properties for accunts"
+  details:
+    project: "microservices"
+    version: "1.0"
+  helps:
+    - 0857 6668-9697
+    - 0821 1310-6437
