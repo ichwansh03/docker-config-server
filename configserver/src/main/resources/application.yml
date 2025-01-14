@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          # http://localhost:8071/accounts/defaults
+          search-locations: "classpath:/config"
+          #search-locations: "file:///Users/ichwansholihin//Documents//config
+
+management:
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+
+server:
+  port: 8071

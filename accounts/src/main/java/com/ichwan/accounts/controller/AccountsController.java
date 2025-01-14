@@ -1,6 +1,5 @@
 package com.ichwan.accounts.controller;
 
-import com.ichwan.accounts.constants.AccountConstants;
 import com.ichwan.accounts.dto.AccountDetailInfoDto;
 import com.ichwan.accounts.dto.CustomerDto;
 import com.ichwan.accounts.dto.ErrorResponseDto;
@@ -14,8 +13,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
+import lombok.AllArgsConstructor;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -26,16 +24,13 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "CRUD REST API for Accounts")
 @RestController
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
-@RequiredArgsConstructor
+@AllArgsConstructor
 @Validated
 public class AccountsController {
 
-    private final IAccountService iAccountService;
-    private final Environment environment;
-    private final AccountDetailInfoDto infoDto;
-
-    @Value("${info.dev}")
-    private String infoDev;
+    private IAccountService iAccountService;
+    private Environment environment;
+    private AccountDetailInfoDto infoDto;
 
     @Operation(summary = "Create account Rest API")
     @ApiResponses({
@@ -155,11 +150,6 @@ public class AccountsController {
                     .status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(new ResponseDto());
         }
-    }
-
-    @GetMapping("/info-dev")
-    public ResponseEntity<String> getInfoDev(){
-        return ResponseEntity.status(HttpStatus.OK).body(infoDev);
     }
 
     @GetMapping("/java-path")
