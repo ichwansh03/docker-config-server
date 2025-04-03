@@ -5,3 +5,19 @@
 * for set in Environment variables, use this command: `SPRING_PROFILES_ACTIVE=prod BUILD_VERSION=1.8`
 
 This repository contains example of access external configuration within three methods: `@Value`, `@ConfigurationProperties` and environment properties.
+
+## Cloud Config
+
+* for using local path configurations, use this config:
+  ```
+  spring.profiles.active=native
+  spring.cloud.config.server.native.search-locations=classpath:/config
+  # spring.cloud.config.server.native.search-locations=file:///Users/ichwansholihin/documents/config
+  ```
+* for using git configuration, use this config:
+```
+spring.cloud.config.server.git.uri=https://github.com/ichwansh03/docker-config-server.git
+spring.cloud.config.server.git.clone-on-start=true
+spring.cloud.config.server.git.default-label=main
+spring.cloud.config.server.git.timeout=5
+```
