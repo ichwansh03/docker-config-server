@@ -4,4 +4,4 @@
 * for set in Program arguments, use this command: `--spring.profiles.active=prod --build.version=1.3`
 * for set in Environment variables, use this command: `SPRING_PROFILES_ACTIVE=prod BUILD_VERSION=1.8`
 
-This repository contains example of access external configuration within three methods: `@Value`, `@PropertySource` and environment properties.
+This repository contains example of access external configuration within three methods: `@Value`, `@ConfigurationProperties` and environment properties.
